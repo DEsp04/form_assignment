@@ -7,7 +7,44 @@
   </head>
   <body>
     <div id="app">
-
+        <h1>Sample Form</h1>
+        <div>
+          <form action="">
+            <div>
+              <label for="fname">First name:</label><br>
+              <input type="text" id="fname" name="fname" placeholder="John"><br><br>
+            </div>
+            
+            <div>
+              <label for="lname">Last name:</label><br>
+              <input type="text" id="lname" name="lname" placeholder="Doe"><br><br> 
+            </div>
+            
+            <div>
+              <label for="lname">Email:</label><br>
+              <input type="email" id="email" name="email" placeholder="john.doe@email.com"><br><br>
+            </div>
+            
+            <div>
+              <label for="email">About yourself:</label><br>
+              <input type="date" id="date" name="date"><br><br>
+            </div>
+            
+            <div>
+               <label for="date">About yourself:</label><br>
+            <textarea name="" placeholder="200 characters or more" rows="10" cols="30"></textarea><br><br>
+            </div>
+           
+            <div> 
+              <legend>Would you like to save your information?</legend>
+              <input type="checkbox" name="permission" value="yes">
+              <label for="yes">Yes</label><br>
+              <input type="checkbox" name="permission" value="no">
+              <label for="yes">No</label><br>
+            </div>
+           
+          </form>
+        </div>
     </div>
     <script type="module" src="/main.js"></script>
   </body>
