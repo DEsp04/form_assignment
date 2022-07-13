@@ -8,8 +8,8 @@
   <body>
     <div id="app">
         <h1>Sample Form</h1>
-        <div>
-          <form action="">
+        <div id="form-app">
+          <form action="#">
             <div>
               <label for="fname">First name:</label><br>
               <input type="text" id="fname" name="fname" placeholder="John"><br><br>
@@ -31,8 +31,8 @@
             </div>
             
             <div>
-               <label for="date">About yourself:</label><br>
-            <textarea name="" placeholder="200 characters or more" rows="10" cols="30"></textarea><br><br>
+              <label for="date">About yourself:</label><br>
+              <textarea name="" placeholder="200 characters or more" rows="10" cols="30"></textarea><br><br>
             </div>
            
             <div> 
@@ -41,8 +41,23 @@
               <label for="yes">Yes</label><br>
               <input type="checkbox" name="permission" value="no">
               <label for="yes">No</label><br>
+            </div><br>
+
+            <div>
+              <label for = "pets">Enter Favorite Pet:</label>
+              <div class = "selectionStyle">
+                <select name="pets" id="pets" class= "selection-box">
+                  <option value="" selected>Select </option>
+                  <option value="cat">Cat</option>
+                  <option value="cat">Dog</option>
+                  <option value="cat">Other</option>
+                </select>
+              </div>
             </div>
            
+            <div><br><br>
+              <input id="submit" type="button" value="Submit">
+            </div><br><br>
           </form>
         </div>
     </div>
